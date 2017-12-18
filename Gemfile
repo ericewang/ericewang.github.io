@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll-paginate'
-gem 'jekyll-theme-minimal'
+group :jekyll_plugins do
+  gem 'jekyll-paginate'
+  gem 'jekyll-theme-minimal'
+end

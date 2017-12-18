@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: post
 title: Tooling Tips and Tricks
 #date: 2017-12-17 12:00:00 -0800
 excerpt_separator: <!--more-->
+published: true
 ---
 
 ## Tooling Tips and Tricks
@@ -13,7 +14,7 @@ To get started into actual blogging, I'll cover one of my passions and a never e
 ### Productivity Expected Value
 Almost every developer nowadays spends some time on this (setting up work-specific shortcut commands, baby's first vimrc, etc), albeit most people are less fanatic about this than I am. Like many effort-based skills, there's a heavy tail of things to learn, but with only a "little" bit of time and investment, you can remove a lot of really annoying mundane tasks.
 
-Nowadays, I "almost" always first consider the value of time I'd be saving if I tried to figure out how to speed up a process in my life. If learning a new trick savings your `T` seconds each time you perform the task, and you spend `M` minutes learning the task, you need to be doing that task at least `M  * 60 / T` times a year before breaking even (Note: I'm bounding productivity estimates to a year, since tools/workflows may change pretty fast, and if you use them even longer, it's an even better ROI!). As a concrete example, if you're saving 10 seconds per use and spend 1 hour learning about a tool, you better use it at least 600 times this year. Obviously, there's also other benefits, like learning for learning's sake, looking like a l33th4X0r when pair programming, and benefiting others by sharing your productivity knowledge.
+Nowadays, I "almost" always first consider the value of time I'd be saving if I tried to figure out how to speed up a process in my life. If learning a new trick savings your \\( T \\) seconds each time you perform the task, and you spend \\( M \\) minutes learning the task, you need to be doing that task at least \\( M * 60 / T \\) times a year before breaking even (Note: I'm bounding productivity estimates to a year, since tools/workflows may change pretty fast, and if you use them even longer, it's an even better ROI!). As a concrete example, if you're saving 10 seconds per use and spend 1 hour learning about a tool, you better use it at least 600 times this year. Obviously, there's also other benefits, like learning for learning's sake, looking like a l33th4X0r when pair programming, and benefiting others by sharing your productivity knowledge.
 
 I'll put each of the tips I have to share in perspective of my own estimates (and post-hoc benefits).
 
