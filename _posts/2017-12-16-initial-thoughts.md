@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Initial Thoughts
-#date: 2017-12-17 12:00:00 -0800
+#date: 2017-12-16 12:00:00 -0800
 excerpt_separator: <!--more-->
 ---
 
