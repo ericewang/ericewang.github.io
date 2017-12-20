@@ -21,7 +21,7 @@ I'll put each of the tips I have to share in perspective of my own estimates (an
 ### Opening GitHub Pull Requests from Terminal
 At work, the typical workflow is: make a change locally, (repeat edit/test loop until ready), and then push to the company's shared Github Repo and create a Pull Request (PR) for code review. I have a shortcut to quickly take me to "https://github.com/$COMPANY/$REPO/", and I found myself often waiting for Github's polling loop to eventually show me this:
 
-![]({{ "/assets/tooling/github_recently_pushed_branches.png" | absolute_url }})
+![GitHub recently pushed branches]({{ "/assets/tooling/github_recently_pushed_branches.png" | absolute_url }})
 
 This takes anywhere between ~10-30 seconds for me, and given I just finished working on this code, I don't want to context switch to anything else before getting it into a reviewable state. That's why I was ecstatic when my coworker Andrew showed me this neat bash function:
 
@@ -84,7 +84,7 @@ I defined `git pr` (yes force-pushing is bad ... just don't do this to your mast
 
 I use Zsh and Oh-My-Zsh as my terminal shell of choice, and the out-of-box settings are awesome. I've found that I don't need to make many tweaks to my configuration (in contrast, my `~/.bashrc` was way too long/confusing), but I decided to make my own fork to make a few changes. If you're curious about the changes, they are the most recent commits in [my Oh-My-Zsh fork](https://github.com/ericewang/oh-my-zsh/). However, they can all be summed up by this screen shot:
 
-![]({{ "/assets/tooling/zsh-autocomplete.png" | absolute_url }})
+![Zsh autocomplete]({{ "/assets/tooling/zsh-autocomplete.png" | absolute_url }})
 
 There are two changes that are worth pointing out:
 
