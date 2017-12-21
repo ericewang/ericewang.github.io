@@ -1,4 +1,6 @@
-plugins: [jekyll-paginate, jekyll-seo-tag]
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 title: a curious mood
 description: Random thoughts by Eric Wang

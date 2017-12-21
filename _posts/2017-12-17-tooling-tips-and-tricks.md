@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooling Tips and Tricks
+title: "Tooling, Tips, and Tricks - Pull Requests, Zsh, and Kubernetes!"
 #date: 2017-12-17 12:00:00 -0800
 published: true
 ---
@@ -20,7 +20,7 @@ At work, the typical workflow is: make a change locally, (repeat edit/test loop 
 
 ![GitHub recently pushed branches]({{ "/assets/tooling/github_recently_pushed_branches.png" | absolute_url }})
 
-This takes anywhere between ~10-30 seconds for me, and given I just finished working on this code, I don't want to context switch to anything else before getting it into a reviewable state. That's why I was ecstatic when my coworker Andrew showed me this neat bash function:
+This takes anywhere between ~10-30 seconds for me, and given I just finished working on this code, I don't want to context switch to anything else before shipping my work off in its reviewable state. That's why I was ecstatic when my coworker Andrew showed me this neat bash function:
 
 ```bash
 _build_url() {
@@ -58,9 +58,9 @@ open-pr() {
 }
 ```
 
-To summarize, `open-pr` opens your default browser with a url for creating a PR (in this case: `https://github.com/$COMPANY/$REPO/compare/master...ericwang-db:fooBranch`), so all you need to do is write the PR description and submit to create your PR! Fortunately, GitHub's URL is always fixed for PR creation, which makes this function straightforward and easy. Note: the example I showed is for creating a PR against an upstream git repo; If you create PRs against your own fork, you have to make sure the "upstream" git remote is not defined.
+To summarize, `open-pr` opens your default browser with a url for creating a PR (in this case: `https://github.com/$COMPANY/$REPO/compare/master...ericwang-db:fooBranch`), so all you need to do is write the PR description and submit to create your PR! Fortunately, GitHub's URL for PR creation is static, which makes this function straightforward and easy. Note: the example I showed is for creating a PR against an upstream git repo; If you create PRs against your own fork, you have to make sure the "upstream" git remote is not defined.
 
-Personally, my workflows involve creating many concurrent PRs, and I typically create 5-10 PRs a week against just our work's monorepo. I'd estimate my per-shortcut savings to be ~10 seconds, so annually, I'm getting back 65 min. To be honest, that's pretty small in the grand scheme of things, but it only took a few minutes to figure out how to incorporate this (thanks to Andrew!), and I find mindless pauses waiting for spinners/pages loading pretty disruptive to mental flow.
+Personally, my workflows involve creating many concurrent PRs, and I typically create 5-10 PRs a week against just our work's monorepo. I'd estimate my per-shortcut savings to be ~10 seconds, so annually, I'm getting back 65 min. Overall, that's still pretty small in the grand scheme of things, but it only takes a few minutes to incorporate this (thanks to Andrew!), and it minimizes disruptions to mental flow from waiting for spinners/Github push notifications to appear.
 
 My terminal workflow now looks like this:
 
@@ -71,7 +71,8 @@ git pr
 open-pr
 ```
 
-I defined `git pr` (yes force-pushing is bad ... just don't do this to your master branch!) as an alias in my `~/.gitconfig`:
+I defined `git pr` (yes force-pushing is bad ... just don't allow this on your master branch!) as an alias in my `~/.gitconfig`:
+
 ```
 [alias]
   pr = !"git push -f origin $(git symbolic-ref --short HEAD)"
@@ -79,7 +80,7 @@ I defined `git pr` (yes force-pushing is bad ... just don't do this to your mast
 
 ### Zsh/Oh-My-Zsh Tweaks
 
-I use Zsh and Oh-My-Zsh as my terminal shell of choice, and the out-of-box settings are awesome. I've found that I don't need to make many tweaks to my configuration (in contrast, my `~/.bashrc` was way too long/confusing), but I decided to make my own fork to make a few changes. If you're curious about the changes, they are the most recent commits in [my Oh-My-Zsh fork](https://github.com/ericewang/oh-my-zsh/). However, they can all be summed up by this screen shot:
+I use Zsh and Oh-My-Zsh as my terminal shell of choice, and the out-of-box settings are awesome. I've found that I don't need to make many tweaks to my configuration (in contrast, my `~/.bashrc` was way too long and confusing), but I recently decided to fork off my own repo to make a few changes. If you're curious about the changes, they are the most recent commits in [my Oh-My-Zsh fork](https://github.com/ericewang/oh-my-zsh/). They can all be summed up by this screen shot:
 
 ![Zsh autocomplete]({{ "/assets/tooling/zsh-autocomplete.png" | absolute_url }})
 
@@ -87,9 +88,9 @@ There are two changes that are worth pointing out:
 
 #### zsh-syntax-highlighting
 
-File paths are underlines as you type, and disappear once the path is invalid. Valid commands are "yellow", and invalid commands are "red".
+File paths are underlined as you type, and disappear once the path is invalid. Valid commands are "yellow", and invalid commands are "red".
 
-The expected value of this configuration change is harder to estimate, as it's not a shortening of an existing workflow. As someone who types pretty fast and not particularly carefully, I commonly type the command and hit 'Enter', only to find that it fails with something like `can't open file 'foo'` or `error: the path "foo" does not exist`.
+The immediate value of this configuration change is harder to estimate, as it's not a shortening of an existing workflow. As someone who types pretty fast and not particularly carefully, I commonly type the command and hit 'Enter', only to find that it fails with something like `can't open file 'foo'` or `error: the path "foo" does not exist`. After this, I significantly reduced my command error rate.
 
 #### Displaying the Kubernetes context/namespace
 
@@ -123,6 +124,6 @@ This allows you to quickly switch your environment and know what's going on, mak
 
 ### Wrap-up
 
-Hopefully you find that some of these workflow enhancements apply to you. If you have even-better tips, or are interested in learning more, please [let me know](mailto:{{ site.personal_email }})!
+I've been using these for the last couple months, and have enjoyed the benefits of more deliberate, concise, and less error-prone development! Hopefully you find that some of these workflow enhancements apply to you. If you have even-better tips, or are interested in learning more, please [let me know](mailto:{{ site.personal_email }})!
 
 
