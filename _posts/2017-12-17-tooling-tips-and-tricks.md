@@ -2,11 +2,8 @@
 layout: post
 title: Tooling Tips and Tricks
 #date: 2017-12-17 12:00:00 -0800
-excerpt_separator: <!--more-->
 published: true
 ---
-
-## Tooling Tips and Tricks
 
 To get started into actual blogging, I'll cover one of my passions and a never ending puzzle: **development environment configuration**. Generally, my tooling has become pretty stable, but recently, I made a few nice additions worth sharing.
 <!--more-->
