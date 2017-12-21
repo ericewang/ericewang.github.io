@@ -1,10 +1,17 @@
-title: Eric Wang
-description: a curious mood
-show_downloads: false
+plugins: [jekyll-paginate, jekyll-seo-tag]
+
+title: a curious mood
+description: Random thoughts by Eric Wang
+name: Eric Wang
+
 google_analytics: UA-111481890-1
+
 theme: jekyll-theme-minimal
+paginate: 5
+
+excerpt_separator: <!--more-->
+
 github_url: https://www.github.com/ericewang/
 linkedin_url: https://www.linkedin.com/in/ericewang/
 resume_path: /assets/ericwang-resume.pdf
 personal_email: eric.ej.wang@gmail.com
-paginate: 5
