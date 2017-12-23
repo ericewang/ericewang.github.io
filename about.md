@@ -17,4 +17,4 @@ subjects (databases, compilers, systems, etc).
 
 If you're interested in discussing problems, or tackling new projects, feel free to reach out!
 
-[Contact me](mailto:{{ site.personal_email }})
+[Contact me!](mailto:{{ site.personal_email }})
