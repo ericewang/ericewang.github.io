@@ -3,6 +3,7 @@ layout: post
 title: "Tooling, Tips, and Tricks - Pull Requests, Zsh, and Kubernetes!"
 #date: 2017-12-17 12:00:00 -0800
 published: true
+tags: configuration github zsh kubernetes
 ---
 
 To get started into actual blogging, I'll cover one of my passions and a never ending puzzle: **development environment configuration**. Generally, my tooling has become pretty stable, but recently, I made a few nice additions worth sharing.
