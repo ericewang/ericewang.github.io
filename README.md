@@ -14,4 +14,4 @@ To enable drafts, run `bundle exec jekyll serve --drafts` instead.
 
 ## Updating Tags
 
-To generate tag pages for new tags in blog posts, run `python tag_generator.py`.
+To generate tag pages for new tags in blog posts, run `python script/generate_tag_pages.py`.

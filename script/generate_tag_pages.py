@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-tag_generator.py
+generate_tag_pages.py
 
 Copyright 2017 Long Qian
 Contact: lqian8@jhu.edu
