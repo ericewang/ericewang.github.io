@@ -5,7 +5,7 @@ published: true
 tags: kubernetes cloud-native conference
 ---
 
-Earlier this month, I went to KubeCon/CloudNativeCon 2017 in Austin, Texas. I was fortunate enough to give a talk there about some of the cool work ([Real Security for Services
+Earlier this month, I attended KubeCon/CloudNativeCon 2017 in Austin, Texas. I gave a joint talk there about some of the cool work ([Real Security for Services
 on Kubernetes](https://schd.ws/hosted_files/kccncna17/0d/KubeCon-Slides-Databricks.pdf)) my team focuses on. Beyond that, I attended many talks, visited sponsor showcases, and chatted with a few attendees to get a better picture of the cool things going on. It gave me clear perspective on the current state and direction of one of the today's most popular open source projects.
 <!--more-->
 
